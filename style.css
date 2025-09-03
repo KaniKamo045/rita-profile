@@ -1,0 +1,114 @@
+:root {
+    --primary-color: #000000;
+    --secondary-color: #FFFFFF;
+    --font-main: 'Nanum Myeongjo', serif;
+    --font-title: 'Orbitron', sans-serif;
+}
+
+body {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    font-family: var(--font-main);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    border: 10px solid var(--primary-color);
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 900px;
+    width: 90%;
+    background-color: var(--secondary-color);
+    padding: 2rem;
+    text-align: center;
+}
+
+header h1 {
+    font-family: var(--font-title);
+    font-size: 4rem;
+    margin: 0;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+    border-top: 2px dashed var(--primary-color);
+    border-bottom: 2px dashed var(--primary-color);
+    padding: 10px 0;
+    display: inline-block;
+}
+
+main {
+    margin-top: 3rem;
+}
+
+#intro {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem;
+    text-align: left;
+    border: 2px solid var(--primary-color);
+    padding: 2rem;
+}
+
+.image-container {
+    flex: 1;
+    min-width: 250px;
+}
+
+#rita-img {
+    width: 100%;
+    height: auto;
+    border: 5px solid var(--primary-color);
+    transition: transform 0.3s ease-in-out;
+}
+
+#rita-img:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.text-content {
+    flex: 2;
+}
+
+h2 {
+    font-family: var(--font-title);
+    font-size: 1.8rem;
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    display: inline-block;
+}
+
+p {
+    line-height: 1.8;
+    font-size: 1.1rem;
+}
+
+#story {
+    margin-top: 4rem;
+    background: repeating-linear-gradient(
+        45deg,
+        #f0f0f0,
+        #f0f0f0 10px,
+        #ffffff 10px,
+        #ffffff 20px
+    );
+    border: 2px solid var(--primary-color);
+    padding: 2rem;
+}
+
+footer {
+    margin-top: 3rem;
+    padding-top: 1rem;
+    border-top: 2px dashed var(--primary-color);
+    font-size: 0.9rem;
+}
